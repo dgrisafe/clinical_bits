@@ -4,6 +4,22 @@ source("format_sex.R")
 source("fun_plot.R")
 
 
+# Electrolytes
+df_electrolytes <- data.frame(
+  conc_l = c(136, 3.5, 95, 22, 1.5),
+  conc_u = c(146, 5.0, 105, 28, 2.0),
+  electrolyte = factor(1:5, 1:5, labels = c("Sodium (Na+)", "Potassium (K+)", "Chloride (Cl–)", "Bicarbonate (HCO3–)", "Magnesium (Mg2+)"))
+)
+p_electrolytes <- df_electrolytes %>% 
+  plot_errorbar(xvar = electrolyte, color = electrolyte) +
+  scale_color_manual(values = c("#f8f800", "#008f00", "#803000", "#d40704", "#00005c")) +
+  ylim(c(0, 150)) +
+  labs(x = "", y = "Serum Concentration (mEq/L)") +
+  ggtitle("Serum Electrolytes") +
+  guides(color=guide_legend(nrow=2, byrow=FALSE))
+save_png("SerumElectrolytes.png", p_electrolytes)
+
+
 # Serum Cortisol
 df_cortisol <- data.frame(
   conc_l = c(5, 3, 0),
