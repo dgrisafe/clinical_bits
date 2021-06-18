@@ -16,7 +16,7 @@ plot_conversion <- function(df, xvar, yvar, color = NULL, label_suffix = NULL){
 
 # Length
 df_length_us_si <- data.frame(
-  length_m = c(0.02540, 0.3048, 1.094, 1609),
+  length_m = c(0.02540, 0.3048, 0.9144, 1609),
   label_us = factor(1:4, 1:4, labels = c("Inch (in)", "Foot (ft)", "Yard (yd)", "Mile (mi)"))
 )
 p_length_us_si <- df_length_us_si %>% 
