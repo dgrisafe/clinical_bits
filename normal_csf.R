@@ -20,8 +20,23 @@ p_chloride <- df_chloride %>%
   ggtitle("Chloride (Cl-)")
 save_png("CSFChloride.png", p_chloride)
 
+
+# CSF Protein
+df_protein <- data.frame(
+  conc_l = c(6.0, 0),
+  conc_u = c(7.8, 0.040),
+  fluid = factor(1:2, 1:2, labels = c("Serum", "CSF"))
+)
+p_protein <- df_protein %>% 
+  plot_errorbar(xvar = fluid, color = fluid) +
+  ylim(c(0, 8)) +
+  scale_color_manual(values = color_csf_serum) +
+  labs(x = "Fluid", y = "Concentration (g/dL)", caption = "CSF Gamma Globulin 3% to 12% of Total Protein") +
+  ggtitle("Total Protein")
+save_png("CSFProtein.png", p_protein)
+
+
 # CSF Glucose
-# CSF Chloride
 df_glucose <- data.frame(
   conc_l = c(70, 70, 40),
   conc_u = c(110, 140, 70),
