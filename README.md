@@ -1,6 +1,6 @@
 # clinical_bits
 
-Miscellanea from clinical training illustrated graphically.
+Bits of miscellanea from clinical training illustrated graphically.
 
 ## Lab Values
 
