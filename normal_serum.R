@@ -4,6 +4,52 @@ source("format_sex.R")
 source("fun_plot.R")
 
 
+# Cholesterol
+df_cholesterol <- data.frame(
+  conc_l = c(0, 240, 40, 0),
+  conc_u = c(200, Inf, 60, 160),
+  cholesterol = factor(1:4, 1:4, labels = c("Total, Normal", "Total, High", "HDL", "LDL"))
+)
+p_cholesterol <- df_cholesterol %>% 
+  plot_errorbar(xvar = cholesterol) +
+  ylim(c(0, 300)) +
+  labs(x = "", y = "Serum Concentration (mg/dL)") +
+  ggtitle("Serum Cholesterol") +
+  guides(color=guide_legend(nrow=2, byrow=FALSE))
+save_png("SerumCholesterol.png", p_cholesterol)
+
+
+# Triglycerides
+df_triglycerides <- data.frame(
+  conc_l = c(0, 151, 200),
+  conc_u = c(150, 199, Inf),
+  triglycerides = factor(1:3, 1:3, labels = c("Normal", "Borderline", "Elevated"))
+)
+p_triglycerides <- df_triglycerides %>% 
+  plot_errorbar(xvar = triglycerides) +
+  ylim(c(0, 300)) +
+  labs(x = "", y = "Serum Concentration (mg/dL)") +
+  ggtitle("Serum Triglycerides") +
+  guides(color=guide_legend(nrow=2, byrow=FALSE))
+save_png("SerumTriglycerides.png", p_triglycerides)
+
+
+# Creatinine Kinase
+df_creatinine_kinase <- data.frame(
+  conc_l = c(10, 25),
+  conc_u = c(70, 90),
+  sex = form_sex
+)
+p_creatinine_kinase <- df_creatinine_kinase %>% 
+  plot_errorbar(xvar = sex, color = sex) +
+  scale_color_manual(values = color_sex) +
+  ylab("Serum Creatinine Kinase (U/L)") +
+  ylim(c(0,100)) +
+  xlab("") +
+  ggtitle("Serum Creatinine Kinase") 
+save_png("SerumCreatinineKinase.png", p_creatinine_kinase)
+
+
 # Electrolytes
 df_electrolytes <- data.frame(
   conc_l = c(136, 3.5, 95, 22, 1.5),
@@ -113,6 +159,22 @@ p_prolactin <- df_prolactin %>%
   xlab("") +
   ggtitle("Serum Prolactin")
 save_png("SerumHormoneProlactin.png", p_prolactin)
+
+
+# Serum Proteins
+df_protein <- data.frame(
+  conc_l = c(6, 3.5, 2.3),
+  conc_u = c(7.8, 5.5, 3.5),
+  protein = factor(x = 1:3, levels = 1:3, labels = c("Total Protein", "Albumin", "Globulin"))
+)
+p_protein <- df_protein %>% 
+  plot_errorbar(xvar = protein, color = protein) +
+  ylab("Serum Protein (g/dL)") +
+  scale_color_manual(values = c("#e32c0a", "#1ec091", "#8a2ecd")) +
+  ylim(c(0, 8)) +
+  xlab("") +
+  ggtitle("Serum Proteins") 
+save_png("SerumProtein.png", p_protein)
 
 
 # Serum Thyroid Hormones
