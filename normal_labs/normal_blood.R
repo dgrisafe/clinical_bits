@@ -1,7 +1,7 @@
 library(tidyverse)
-source("fun_save_png.R")
-source("format_sex.R")
-source("fun_plot.R")
+source("./programs/fun_save_png.R")
+source("./programs/format_sex.R")
+source("./programs/fun_plot.R")
 
 
 # blood hematocrit
@@ -17,7 +17,7 @@ p_hmcrt <- df_hmcrt %>%
   ylim(c(33, 55)) +
   xlab("") +
   ggtitle("Blood Hematocrit")
-save_png("BloodHematocrit.png", p_hmcrt)
+save_png("normal_labs/BloodHematocrit.png", p_hmcrt)
 
 
 # blood hemoglobin
@@ -33,7 +33,7 @@ p_hmgbn <- df_hmgbn %>%
   ylim(c(10, 20)) +
   xlab("") +
   ggtitle("Blood Hemoglobin")
-save_png("BloodHemoglobin.png", p_hmgbn)
+save_png("normal_labs/BloodHemoglobin.png", p_hmgbn)
 
 
 # blood erythrocytes
@@ -49,7 +49,7 @@ p_eryth <- df_eryth %>%
   ylim(c(3,6)) +
   xlab("") +
   ggtitle("Blood Erythrocytes")
-save_png("BloodErythrocyte.png", p_eryth)
+save_png("normal_labs/BloodErythrocyte.png", p_eryth)
 
 
 # blood Erythrocyte sedimentation rate
@@ -65,7 +65,7 @@ p_erythsed <- df_erythsed %>%
   ylim(c(0,20)) +
   xlab("") +
   ggtitle("Blood Erythrocyte Sedimentation Rate (ESR)")
-save_png("BloodErythrocyteSedimentationRate.png", p_erythsed)
+save_png("normal_labs/BloodErythrocyteSedimentationRate.png", p_erythsed)
 
 
 # blood leukocytes
@@ -81,7 +81,7 @@ p_leukocytes <- df_leukocytes %>%
   ylim(c(0, 63)) +
   xlab("") +
   ggtitle("Blood Leukocytes")
-save_png("BloodLeukocytes.png", p_leukocytes)
+save_png("normal_labs/BloodLeukocytes.png", p_leukocytes)
 
 
 # bleeding time
@@ -97,7 +97,7 @@ p_bleed_time <- df_bleed_time %>%
   ylim(c(10, 40)) +
   xlab("") +
   ggtitle("Bleeding Time")
-save_png("BloodBleedingTime.png", p_bleed_time)
+save_png("normal_labs/BloodBleedingTime.png", p_bleed_time)
 
 
 # blood plasma volume
@@ -114,4 +114,4 @@ p_blood_vol <- df_blood_vol %>%
   ylim(c(19, 50)) +
   xlab("") +
   ggtitle("Blood Volume")
-save_png("BloodVolume.png", p_blood_vol)
+save_png("normal_labs/BloodVolume.png", p_blood_vol)

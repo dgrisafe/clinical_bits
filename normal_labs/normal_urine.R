@@ -1,7 +1,7 @@
 library(tidyverse)
-source("fun_save_png.R")
-source("format_sex.R")
-source("fun_plot.R")
+source("./programs/fun_save_png.R")
+source("./programs/format_sex.R")
+source("./programs/fun_plot.R")
 
 
 # creatine clearance
@@ -17,7 +17,7 @@ p_creatine_clear <- df_creatine_clear %>%
   ylim(c(80, 140)) +
   xlab("") +
   ggtitle("Urine Creatine Clearance")
-save_png("UrineCreatineClearance.png", p_creatine_clear)
+save_png("normal_labs/UrineCreatineClearance.png", p_creatine_clear)
 
 
 # 17-Hydroxycorticosteroids
@@ -33,7 +33,7 @@ p_17_hydroxycorticosteroids <- df_17_hydroxycorticosteroids %>%
   ylim(c(0, 10)) +
   xlab("") +
   ggtitle("Urine 17-Hydroxycorticosteroids")
-save_png("Urine17Hydroxycorticosteroids.png", p_17_hydroxycorticosteroids)
+save_png("normal_labs/Urine17Hydroxycorticosteroids.png", p_17_hydroxycorticosteroids)
 
 
 # 17-Ketosteroids, Total
@@ -49,4 +49,4 @@ p_17_ketosteroids <- df_17_ketosteroids %>%
   ylim(c(0, 21)) +
   xlab("") +
   ggtitle("Urine 17-Ketosteroids, Total")
-save_png("Urine17Ketosteroids.png", p_17_ketosteroids)
+save_png("normal_labs/Urine17Ketosteroids.png", p_17_ketosteroids)

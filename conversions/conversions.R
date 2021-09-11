@@ -1,6 +1,6 @@
 library(tidyverse)
-source("fun_save_png.R")
-source("fun_plot.R")
+source("./programs/fun_save_png.R")
+source("./programs/fun_plot.R")
 
 plot_conversion <- function(df, xvar, yvar, color = NULL, label_suffix = NULL){
   dplyr_xvar <- enquo(xvar)
@@ -23,7 +23,7 @@ p_length_us_si <- df_length_us_si %>%
   plot_conversion(xvar = label_us, yvar = length_m, label_suffix = " m") +
   labs(x = "Imperial", y = "SI (log meter)") +
   ggtitle("Length US to SI")
-save_png("ConversionLengthUSSI.png", p_length_us_si)
+save_png("conversions/ConversionLengthUSSI.png", p_length_us_si)
 
 
 # Mass
@@ -35,7 +35,7 @@ p_mass_us_si <- df_mass_us_si %>%
   plot_conversion(xvar = label_us, yvar = mass_g, label_suffix = " g") +
   labs(x = "Imperial", y = "SI (log grams)") +
   ggtitle("Mass US to SI")
-save_png("ConversionMassUSSI.png", p_mass_us_si)
+save_png("conversions/ConversionMassUSSI.png", p_mass_us_si)
 
 
 # Temperature
@@ -55,5 +55,5 @@ p_temperature <- ggplot(data = df_temperature, aes(x = farenheit, y = celsius)) 
   scale_y_continuous(breaks = round(breaks$celsius, digits = 1)) +
   labs(x = "Farenheit", y = "Celsius") + 
   ggtitle("Temperature Farenheit to Celsius") 
-save_png("ConversionTemperatureUSSI.png", p_temperature)
+save_png("conversions/ConversionTemperatureUSSI.png", p_temperature)
 

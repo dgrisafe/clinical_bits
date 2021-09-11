@@ -1,7 +1,7 @@
 library(tidyverse)
-source("fun_save_png.R")
-source("format_sex.R")
-source("fun_plot.R")
+source("./programs/fun_save_png.R")
+source("./programs/format_sex.R")
+source("./programs/fun_plot.R")
 
 
 # Cholesterol
@@ -16,7 +16,7 @@ p_cholesterol <- df_cholesterol %>%
   labs(x = "", y = "Serum Concentration (mg/dL)") +
   ggtitle("Serum Cholesterol") +
   guides(color=guide_legend(nrow=2, byrow=FALSE))
-save_png("SerumCholesterol.png", p_cholesterol)
+save_png("normal_labs/SerumCholesterol.png", p_cholesterol)
 
 
 # Triglycerides
@@ -31,7 +31,7 @@ p_triglycerides <- df_triglycerides %>%
   labs(x = "", y = "Serum Concentration (mg/dL)") +
   ggtitle("Serum Triglycerides") +
   guides(color=guide_legend(nrow=2, byrow=FALSE))
-save_png("SerumTriglycerides.png", p_triglycerides)
+save_png("normal_labs/SerumTriglycerides.png", p_triglycerides)
 
 
 # Creatinine Kinase
@@ -47,7 +47,7 @@ p_creatinine_kinase <- df_creatinine_kinase %>%
   ylim(c(0,100)) +
   xlab("") +
   ggtitle("Serum Creatinine Kinase") 
-save_png("SerumCreatinineKinase.png", p_creatinine_kinase)
+save_png("normal_labs/SerumCreatinineKinase.png", p_creatinine_kinase)
 
 
 # Electrolytes
@@ -63,7 +63,7 @@ p_electrolytes <- df_electrolytes %>%
   labs(x = "", y = "Serum Concentration (mEq/L)") +
   ggtitle("Serum Electrolytes") +
   guides(color=guide_legend(nrow=2, byrow=FALSE))
-save_png("SerumElectrolytes.png", p_electrolytes)
+save_png("normal_labs/SerumElectrolytes.png", p_electrolytes)
 
 
 # Serum Cortisol
@@ -78,7 +78,7 @@ p_cortisol <- df_cortisol %>%
   scale_x_continuous(limits = c(0000, 2400), breaks = c(0000, 0800, 1600, 2000, 2400)) +
   labs(x = "24-Hour Day", y = "Serum Cortisol (µg/dL)", caption = "Cortisol at 2000 ≤ 50% of 0800 Level") +
   ggtitle("Serum Cortisol")
-save_png("SerumCortisol.png", p_cortisol)
+save_png("normal_labs/SerumCortisol.png", p_cortisol)
 
 
 # Serum Bilirubin
@@ -94,7 +94,7 @@ p_bilirubin <- df_bilirubin %>%
   ylim(c(0,1)) +
   xlab("Bilirubin") +
   ggtitle("Serum Bilirubin") 
-save_png("SerumBilirubin.png", p_bilirubin)
+save_png("normal_labs/SerumBilirubin.png", p_bilirubin)
 
 
 # Serum Iron
@@ -110,7 +110,7 @@ p_iron <- df_iron %>%
   ylim(c(0,180)) +
   xlab("") +
   ggtitle("Serum Iron") 
-save_png("SerumIron.png", p_iron)
+save_png("normal_labs/SerumIron.png", p_iron)
 
 
 # serum ferritin
@@ -126,7 +126,7 @@ p_ferritin <- df_ferritin %>%
   ylim(c(0,250)) +
   xlab("") +
   ggtitle("Serum Ferritin")
-save_png("SerumFerritin.png", p_ferritin)
+save_png("normal_labs/SerumFerritin.png", p_ferritin)
 
 
 # reproductive hormones
@@ -142,7 +142,7 @@ p_hor_repro <- df_hor_repro %>%
   ylab("Serum Concentration (mIU/mL)") +
   xlab("") +
   ggtitle("Serum Gonadotropic Hormones")
-save_png("SerumHormoneFSHLH.png", p_hor_repro)
+save_png("normal_labs/SerumHormoneFSHLH.png", p_hor_repro)
 
 
 # prolactin hormone
@@ -158,7 +158,7 @@ p_prolactin <- df_prolactin %>%
   ylim(c(0,25)) +
   xlab("") +
   ggtitle("Serum Prolactin")
-save_png("SerumHormoneProlactin.png", p_prolactin)
+save_png("normal_labs/SerumHormoneProlactin.png", p_prolactin)
 
 
 # Serum Proteins
@@ -174,7 +174,7 @@ p_protein <- df_protein %>%
   ylim(c(0, 8)) +
   xlab("") +
   ggtitle("Serum Proteins") 
-save_png("SerumProtein.png", p_protein)
+save_png("normal_labs/SerumProtein.png", p_protein)
 
 
 # Serum Thyroid Hormones
@@ -189,7 +189,7 @@ p_thyroid <- df_thyroid %>%
   ylim(c(0, 12)) +
   xlab("") +
   ggtitle("Serum Thyroid Hormone") 
-save_png("SerumHormoneThyroid.png", p_thyroid)
+save_png("normal_labs/SerumHormoneThyroid.png", p_thyroid)
 
 
 # Serum Immunoglobulins
@@ -203,7 +203,7 @@ p_immunoglobulin <- df_immunoglobulin %>%
   ylim(c(0, 15000)) +
   labs(x = "Immunoglobulin", y = "Serum Concentration (mg/dL)", caption = "IgE 380 IU/mL = 0.0912 mg/dL") +
   ggtitle("Serum Immunoglobulins") 
-save_png("SerumImmunoglobulin.png", p_immunoglobulin)
+save_png("normal_labs/SerumImmunoglobulin.png", p_immunoglobulin)
 
 
 # Serum ABG
@@ -217,4 +217,4 @@ p_abg <- df_abg %>%
   ylim(c(0, 110)) +
   labs(x = "", y = "Pressure (mmHg)", caption = "7.35 < pH < 7.45") +
   ggtitle("Serum Arterial Blood Gas (ABG)") 
-save_png("SerumArterialBloodGas.png", p_abg)
+save_png("normal_labs/SerumArterialBloodGas.png", p_abg)

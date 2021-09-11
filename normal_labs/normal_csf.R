@@ -1,7 +1,7 @@
 library(tidyverse)
-source("fun_save_png.R")
-source("format_sex.R")
-source("fun_plot.R")
+source("./programs/fun_save_png.R")
+source("./programs/format_sex.R")
+source("./programs/fun_plot.R")
 
 color_csf_serum <- list(CSF = "#55aaaf", Serum = "#ab4a4c")
 
@@ -18,7 +18,7 @@ p_chloride <- df_chloride %>%
   scale_color_manual(values = color_csf_serum) +
   labs(x = "Fluid", y = "Concentration (mEq/L)") +
   ggtitle("Chloride (Cl-)")
-save_png("CSFChloride.png", p_chloride)
+save_png("normal_labs/CSFChloride.png", p_chloride)
 
 
 # CSF Protein
@@ -33,7 +33,7 @@ p_protein <- df_protein %>%
   scale_color_manual(values = color_csf_serum) +
   labs(x = "Fluid", y = "Concentration (g/dL)", caption = "CSF Gamma Globulin 3% to 12% of Total Protein") +
   ggtitle("Total Protein")
-save_png("CSFProtein.png", p_protein)
+save_png("normal_labs/CSFProtein.png", p_protein)
 
 
 # CSF Glucose
@@ -49,4 +49,4 @@ p_glucose <- df_glucose %>%
   scale_color_manual(values = color_csf_serum) +
   labs(x = "Fluid", y = "Concentration (mg/dL)") +
   ggtitle("Glucose")
-save_png("CSFGlucose.png", p_glucose)
+save_png("normal_labs/CSFGlucose.png", p_glucose)
