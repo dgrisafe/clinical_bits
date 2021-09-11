@@ -1,0 +1,165 @@
+dis_cat,disorder,diagnosis,t_beg,t_end,notes
+1,Psychotic,Schizophrenia,182,inf,"6 months includes prodromal (declining function), psychosis (psychotic symptoms) and residual phases (negative symptoms).
+2 or more of the following psychotic symptoms (at least 1 from the first three) must be present for at least 1 month: delusions, hallucinations, disorganized speech, disorganized or catatonic behavior, negative symptoms (e.g., [5 A's]: flat or blunted affect, anhedonia, avolition or apathy, alogia or poverty of speech, decreased attention and social isolation).
+Significant social, occupational or self-care functional deterioration.
+Symptoms not due to another psychiatric illness or substance use.
+Intact procedural memory and orientation.
+Lack of insight into disease.
+Downward drift theory: schizophrenia more common among lower socioeconomic status due to difficulty holding jobs."
+1,Psychotic,Schizophreniform Disorder,31,182,"Same as schizophrenia, but shorter duration.
+1/3 of patients recover without progressing to schizophrenia or schizoaffective disorder."
+1,Psychotic,Schizoaffective Disorder,,,"Psychotic symptoms with either a major depressive or manic episode for a majority of the psychotic illness.
+2 weeks or more of delusions or hallucinations without mood disorder symptoms, otherwise the diagnosis becomes Mood Disorder with Psychotic Symptoms.
+Symptoms cannot be due to substance use."
+1,Psychotic,Brief Psychotic Disorder,1,31,"Same as schizophrenia, but shortest duration.
+Return to normal functioning after symptoms.
+Symptoms must not be due to substance use or medical condition.
+Rare diagnosis, may be in response to bereavement, sexual assault, etc.
+High rates of relapse, but most recover without disease progression."
+1,Psychotic,Delusional Disorder,31,inf,"1 or more delusions without meeting other criteria for schizophrenia.
+Normal functioning in life without obviously bizarre behavior.
+Delusions of various types, but usually non-bizarre: erotomanic, grandiose, somatic, persecutory, jealous.
+Poor insight; egosyntonic."
+2,Mood,Major Depressive Episode,14,inf,"Depressed mood and 5 or more of the following (SIG E CAPS): sleep disturbances, decreased interest in pleasurable activities (anhedonia), feelings of guilt or worthlessness, decreased energy or fatigue, decreased concentration, appetite changes, psychomotor retardation or agitation, suicidality as recurrent thoughts of death or suicide."
+2,Mood,Major Depressive Disorder,182,365,"At least one major depressive episode.
+No history of manic or hypomanic episodes."
+2,Mood,Persistent Depressive Disorder (Dysthymia),730,inf,"2 or more of the following (CHASES): poor concentration or difficulty making decisions, feelings of hopelessness, poor appetite or overeating, insomnia or hypersomnia, low energy or fatigue, low self-esteem.
+2 Ds: 2 years of depression, 2 symptoms of CHASES, never asymptomatic for more than 2 months."
+2,Mood,Pediatric Persistent Depressive Disorder (Dysthymia),365,inf,Same as in adults.
+2,Mood,Manic Episode,7,inf,"Symptoms cannot be attributed to substance use or other medical condition.
+Must cause clinically significant distress or social/occupational impairment.
+7-day minimum is unnecessary if hospitalization is required.
+Psychotic symptoms occur in 50% of manic patients.
+Three of the following (four if mood irritable only) (DIG FAST): distractibility, insomnia or impulsive behavior, inflated grandiosity or self-esteem, flight of ideas or racing thoughts, increased activity or agitation, pressured speech, thoughtlessness."
+2,Mood,Hypomanic Episode,4,inf,"Same criteria as a manic episode, except:
+No marked impairment in social or occupational functioning
+No hospitalization required
+No psychotic features"
+2,Mood,Bipolar I Disorder,,,"Occurrence of manic episode is only requirement for diagnosis.
+Euthymia, major depressive episodes or hypomanic episodes may occur between manic episodes, but these are not required for diagnosis.
+Untreated manic episodes may last several months.
+Relapses are common (<= 90%)."
+2,Mood,Bipolar II Disorder,,,"One or more depressive episodes and one or more hypomanic episodes.
+No lifetime history of a manic episode."
+2,Mood,Cyclothymic Disorder,730,inf,"Alternating periods of hypomanic symptoms and periods with mild-to-moderate depressive symptoms.
+No history of hypomanic episodes, major depressive episodes or manic episodes
+Never asymptomatic for more than 2 months."
+2,Mood,Premenstrual Dysphoric Disorder,60,inf,"Mood lability, irritability, dysphoria or anxiety occuring during the premenstrual phase for at least two cycles.
+Symptoms must cause clinical distress or impairment in functioning.
+Diagnose using a journal of mood and feelings for at least 2 menstrual cycles.
+Symptoms are not due to underlying psychiatric disorder or substance use."
+2,Mood,Disruptive Mood Dysregulation Disorder,365,inf,"Chronic, severe, persistent irritability occurring in childhood and adolescence.
+Severe, recurrent outbursts disproportionate to situation.
+Mood persistently angry/irritable most of the day between outbursts.
+No more than 3 months without symptoms.
+Symptoms in at least 2 settings (e.g., home, school, friends).
+Symptoms must occur before age 10, but diagnosis may be made up until age 18.
+No manic or hypomanic episodes lasting more than 1 day.
+Symptoms do not occur during major depressive disorder.
+Symptoms not better explained by other psychiatric diagnosis (e.g., oppositional defiant disorder, intermittent explosive disorder or bipolar disorder)."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Panic Attack,,,"DaPANICS: dizziness, disconnectedness, depersonalization (self), derealization (reality), palpitations, paresthesias, abdominal distress, numbness, nausea, intense feelings of dying or going insane, chills, chest pain, shortness of breath, sweating, shaking
+Lasts minutes, usually resolves in 30 minutes, may have residual anxiety for hours after"
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Panic Disorder,,,"Recurrent panic attacks without identifiable trigger.
+1 or more panic attack followed by fear or worry of another attack.
+Not caused by direct use of substance, another psychiatric disorder or a medical disorder."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Agoraphobia,182,inf,"Intense, chronic fear of being in public places during at least 2 situations (outside home, tight places, crowds, etc.) where unable to escape or obtain help.
+Commonly occurs with panic disorder; 50% experience panic attack before agoraphobia.
+Onset usually before age 35.
+Strong genetic component: 60% heritable.
+Often precipitated by traumatic event."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Specific-Phobias,182,inf,"Intense fear of a specific object or situation (i.e., phobia stimulus) out of proportion to actual danger/threat.
+Phobia is an irrational fear leading to endurance of anxiety or avoidance.
+May occur in response to trauma with specific-phobia.
+Common phobias include animals (spiders, insects, dogs, snakes, mice), natural environment (heights, storms, water), situational (elevators, airplanes, enclosed spaces, buses), blood-injection-injury (needles, injections, blood, invasive medical procedures, injuries)."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Social Anxiety Disorder (Phobia),182,inf,"Fear of scrutiny by others or fear of acting in a humiliating or embarrassing way.
+Subset of specific-phobias.
+May be situational to public speaking"
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Selective Mutism,0,31,"Failure to speak in specific situations for 1 month or more, despite intact ability to use language.
+Significant impairment to academic, occupational, or social functioning.
+Onset usually during childhood.
+Associated with anxiety and social anxiety."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Separation Anxiety Disorder,182,inf,"6 months or greater of symptoms in adults.
+Separation anxiety disorder occurs with extreme distress/worry or when developmentally inappropriate.
+Often preceded by stressful life event.
+Separation anxiety associated with somatic symptoms to avoid school/work."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Pediatric Separation Anxiety Disorder,28,inf,"Same as adults, but diagnosed after only 4 weeks.
+Normal separation anxiety begins at 6 months of age and peaks by 18 months."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Generalized Anxiety Disorder,182,inf,"Worry WARTS: worried, wound up, worn out, absent-minded, restless, muscle tension, sleepless.
+Worry is generalized across various domains, without a specific trigger.
+Comorbid with other anxiety and depressive disorders."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Obsessive-Compulsive Disorder,,,"Obsessions with or without compulsions that are distressing, dysfunctional or require excessive time (> 1 hour per day).
+Obsessions are recurrent, intrusive, and undesired thoughts that increase anxiety; patient attempts to ignore, supress or neutralize by another thought or action (i.e., performing a compulsion).
+Compulsions are repetitive behaviors or mental acts the patient feels driven to carry out in response to an obsession to reduce stress or prevent disaster; compulsions are unrelated to what they are intended to prevent."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Body Dysmorphic Disorder,,,"Preoccupations with body parts perceived as flawed or defective with minimal or unobservable physical imperfections.
+Causes patient distress, may spend significant time trying to correct perceived flaws with medical procedures, but are insatiable.
+Associated with repetitive behaviors such as skin picking or excessive grooming, or mental acts such as comparing selves to others.
+Preoccupation with appearance not better accounted for by body fat/weight concerns in an eating disorder."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Hoarding Disorder,,,"Saving all possessions of any value due to distress from discarding items.
+Clutter accumulates over time, causing inhospitable living conditions.
+Impairs social, occupational and other domains for functioning.
+Associated with traumatic event preceding hoarding activity."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Trichotillomania (Hair-Pulling Disorder),,,"Hair loss of different lengths from recurrent hair pulling.
+Unable to stop pulling hair despite attempts.
+Onset at puberty.
+Associated with stressful event.
+Associated with Obsessive Compulsive Disorder, Major Depressive Disorder, and Excoriation (Skin Picking) Disorder.
+Chronic or waxing-waning."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Excoriation (Skin-Picking Disorder),,,"Lesions from recurrent skin picking.
+Unable to stop picking skin despite attempts.
+Onset at adolescence.
+Associated with Obsessive Compulsive Disorder.
+Chronic or waxing-waning."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Post Traumatic Stress Disorder,31,inf,"Cluster of symptoms following life-threatening, traumatic event: intrusive nightmares or flashbacks, avoidance, negative alterations in thoughts and mood, increased arousal (hypervigilance, exaggerated startle response, irritability/angry outbursts, reduced concentration, sleep disturbances).
+Symptoms may have delayed onset following trauma.
+Symptoms differ in young children.
+50% of patients recover within 3 months.
+80% of patients have comorbid mental disorder, including Major Depressive Disorder, Bipolar Disorder, Anxiety Disorder, Substance-Use Disorder."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Acute Distress Disorder,3,31,"Similar symptoms of Post-Traumatic Stress Disorder.
+Onset of symptoms within 1 month of trauma."
+3,"Anxiety, Obsessive-Compulsive, Trauma/Stressor",Adjustment Disorder,0,31,"Stressful, non-life-threatening event causing excessive behavioral or emotional distress causing impairment of daily living.
+Onset within 3 months of stressful event (e.g., divorce, death of loved one, loss of job).
+Symptoms cannot be normal bereavement.
+Symptoms resolve within 6 months after stressor is eliminated."
+4,Personality,Personality Disorders,,,"Enduring patterns of inner experience deviating from cultural norms, which are pervasive, maladaptive and cause social or occupational impairment.
+Manifest as 2 or more of the following (CAPRI): Cognition, Affect, Personal Relations, Impulse control.
+Patients lack insight to their disorder; egosyntonic or perceived as immutable.
+Patients vulnerable to developing mental disorders with stressors.
+Onset during adolescence or early adulthood; lifelong, chronic disorders."
+4,Personality,Paranoid Personality Disorder,,,Cluster A
+4,Personality,Schizoid Personality Disorder,,,"Cluster A
+No desire for social interaction; contrast with Avoidant Personality Disorder."
+4,Personality,Schizotypal Personality Disorder,,,Cluster A
+4,Personality,Antisocial Personality Disorder,,,"Cluster B
+Cannot be diagnosed before age 18, which is suggestive of Conduct Disorder."
+4,Personality,Borderline Personality Disorder,,,Cluster B
+4,Personality,Histrionic Personality Disorder,,,Cluster B
+4,Personality,Narcissistic Personality Disorder,,,Cluster B
+4,Personality,Avoidant Personality Disorder,,,"Cluster C
+May be same disease/spectrum as Social Anxiety Disorder (Social Phobia).
+Desire companionship, but fearful of rejection in social interactions; contrast with Schizoid Personality Disorder."
+4,Personality,Dependant Personality Disorder,,,Cluster C
+4,Personality,Obsessive Compulsive Personality Disorder,,,Cluster C
+5,Addiction,Substance Use Disorder,,,"2 of the following within 12 months: using more than intended, unable to decrease use, significant time spent procuring substance, cravings, failure at work or school, persistent use despite social problems associated with substance, reducing occupational or recreational activities in favor of using, use in dangerous scenarios, continued use despite medical or psychological issues, tolerance, withdrawal.
+Alcohol and nicotine most commonly used substances.
+Substance-induced mood or psychotic symptoms alleviated with abstinence. "
+5,Addiction,"Alcohol Withdrawal, Early",0.25,1,"Insomnia, tremulousness, agitation, irritability"
+5,Addiction,"Alcohol Withdrawal, Seizures",0.5,2,"Generalized, tonic-clonic seizures"
+5,Addiction,"Alcohol Withdrawal, Delerium Tremens",2,4,"Delirium, visual hallucinations, agitation, gross tremor, fluctuating psychomotor activity, fever, autonomic instability (tachycardia, hypertension, diaphoresis)
+DT affects 5% of alcohol withdrawal patients.
+5% mortality, 35% mortality if untreatee"
+,,"Cocaine Withdrawal, Mild-to-Moderate",0,3,"Abrupt withdrawal not life-threatening.
+Post-intoxication crash: malaise, fatigue, hypersomnolence, depression, anhedonia, hunger, constricted pupils, vivid dreams, psychomotor agitation or retardation.
+Risk of suicidality."
+,,"Cocaine Withdrawal, Severe",7,14,"Same as mild-to-moderate cocaine withdrawal, but longer course."
+,,,,,
+,,,,,
+,,,,,
+,Neurocognitive,,,,
+,Geriatric,,,,
+,Pediatric,,,,
+,Dissociative,,,,
+,Somatic,,,,
+,Impulse,,,,
+,Eating,,,,
+,Sleep-Wake,,,,
+,Sexual,,,,
