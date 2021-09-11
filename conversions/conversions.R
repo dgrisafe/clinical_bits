@@ -1,6 +1,5 @@
 library(tidyverse)
 source("./programs/fun_save_png.R")
-source("./programs/fun_plot.R")
 
 plot_conversion <- function(df, xvar, yvar, color = NULL, label_suffix = NULL){
   dplyr_xvar <- enquo(xvar)
