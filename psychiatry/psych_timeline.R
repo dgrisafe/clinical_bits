@@ -1,6 +1,6 @@
 library(tidyverse)
-source("./programs/fun_save_png.R")
-source("./programs/fun_plot.R")
+source("/Users/domusc/Documents/GitHub/clinical_bits/programs/fun_save_png.R")
+source("/Users/domusc/Documents/GitHub/clinical_bits/programs/fun_plot.R")
 
 plot_h_errorbar <- function(df, xvar, ymin, ymin_txt, ymax, ymax_txt, color = NULL, label_suffix = NULL){
   dplyr_xvar <- enquo(xvar)
@@ -17,7 +17,7 @@ plot_h_errorbar <- function(df, xvar, ymin, ymin_txt, ymax, ymax_txt, color = NU
     theme(legend.position = "top", legend.title = element_blank(), axis.text.x = element_text(size = 8))
 }
 
-df_psych_raw <- read.csv("./psychiatry/psych_timeline.csv")
+df_psych_raw <- read.csv("./psych_timeline.csv")
 
 df_psych_time <- df_psych_raw %>% 
   dplyr::mutate(
@@ -35,5 +35,5 @@ p_psych_time <- df_psych_time %>%
   ggtitle("Psychiatric Diagnosis Timeline (in Days)") +
   theme(legend.position = "none") +
   coord_flip()
-save_png("psychiatry/psych_timeline.png", p_psych_time, dim_w = 10, dim_h = 40)
+save_png("psych_timeline.png", p_psych_time, dim_w = 10, dim_h = 40)
 
