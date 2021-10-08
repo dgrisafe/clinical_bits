@@ -12,5 +12,3 @@ plot_errorbar <- function(df, xvar, ymin = conc_l, ymax = conc_u, color = NULL, 
     theme_cowplot() +
     theme(legend.position = "top", legend.title = element_blank(), axis.text.x = element_text(size = 8))
 }
-
-# plot_errorbar(color = color_sex)
