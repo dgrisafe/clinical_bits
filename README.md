@@ -29,3 +29,5 @@ A blogpost will better explore these ideas.
 ## General Surgery
 
 Journal club presentation of alleviating severe GERD s/p sleeve gastrectomy using Laparoscopic Ligamentum Teres cardiopexy, a simpler procedure than the Roux-en-Y-Gastric Bypass. [@hawasli_2021_laparoscopic]
+
+![](generalsurgery/gs_refluxrecurrence.png)
