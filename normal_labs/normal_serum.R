@@ -34,20 +34,20 @@ p_triglycerides <- df_triglycerides %>%
 save_png("normal_labs/SerumTriglycerides.png", p_triglycerides)
 
 
-# Creatinine Kinase
-df_creatinine_kinase <- data.frame(
+# Creatine Kinase
+df_creatine_kinase <- data.frame(
   conc_l = c(10, 25),
   conc_u = c(70, 90),
   sex = form_sex
 )
-p_creatinine_kinase <- df_creatinine_kinase %>% 
+p_creatine_kinase <- df_creatine_kinase %>% 
   plot_errorbar(xvar = sex, color = sex) +
   scale_color_manual(values = color_sex) +
-  ylab("Serum Creatinine Kinase (U/L)") +
+  ylab("Serum Creatine Kinase (U/L)") +
   ylim(c(0,100)) +
   xlab("") +
-  ggtitle("Serum Creatinine Kinase") 
-save_png("normal_labs/SerumCreatinineKinase.png", p_creatinine_kinase)
+  ggtitle("Serum Creatine Kinase") 
+save_png("normal_labs/SerumCreatineKinase.png", p_creatine_kinase)
 
 
 # Electrolytes
